@@ -1,5 +1,7 @@
 {% autoescape off %}
 <script type="text/javascript">
+jQuery = jQuery || django.jQuery;
+
 (function($) {
     $(document).ready(function() {
         $("{{ selector }}").each(function (k, el) {
